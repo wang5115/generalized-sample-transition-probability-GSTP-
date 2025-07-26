@@ -1,1 +1,1 @@
-# generalized-sample-transition-probability(GSTP)
+# generalized-sample-transition-probability (GSTP)
