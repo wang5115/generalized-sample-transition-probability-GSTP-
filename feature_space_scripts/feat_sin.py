@@ -59,9 +59,7 @@ def distance(x1,x2):
     ndim = x1.shape[1]
     diff = x1.reshape(ndata_batch,1,ndim)-x2
     diff_pbc = pbc_feature(diff)
-    diff_pbc_sin = np.sin(diff/2)
-    #diff_pbc = (1-np.cos(diff))**2
-    #diff_pbc = (np.cos(diff/2))**2
+    diff_pbc_sin = np.sin(diff_pbc/2)
     return diff_pbc_sin
     
 def gaussianKer(x1,x2,s):
